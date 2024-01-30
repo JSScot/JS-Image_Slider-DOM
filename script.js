@@ -4,6 +4,21 @@ console.log("Helloooo, testinggg")
 const prevArrow = document.querySelector('.prev');
 const nextArrow = document.querySelector('.next'); 
 
+
+// number of imgs in the container
+
+
+// insert imgs into the container
+
+const updateBgImage = () => {
+  
+}
+
+
+
+
+
+
 // save number of images in container
 const carouselContainer = document.querySelector('.carousel').children;
 let totalSlides = carouselContainer.length;

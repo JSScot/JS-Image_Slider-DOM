@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(29, 18, 109);
+  background-image:url("https://media3.giphy.com/media/3oEdvaxmd15YTHy6Uo/giphy.gif?cid=ecf05e47efhrw4uq6c15pag5okg2x4rqbjff5cf616ipagta&ep=v1_gifs_related&rid=giphy.gif&ct=g");
   margin-top: 100px;
 }
 
@@ -26,6 +26,8 @@ body {
 .item {
   position: absolute;
   display: none;
+  border:2px white dashed;
+  box-shadow: 50px;
 
 }
 
@@ -75,3 +77,8 @@ body {
   background: white;
 }
 /*wfrefefe*/
+
+.image{
+position: absolute;
+display:none;
+}
