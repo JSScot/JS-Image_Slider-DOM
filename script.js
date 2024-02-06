@@ -49,7 +49,7 @@ const moveSlides = (direction) => {
   carouselContainer[index].classList.add('main');
 };
 
-// moves every 4 seconds
-/*setInterval(() => {
+// moves every 3 seconds
+setInterval(() => {
   moveSlides('next');
-}, 4000);*/
+}, 3000);
