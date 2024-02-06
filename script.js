@@ -17,10 +17,10 @@ const updateBackgroundImage = () => {
   }
 };
 
-// Call the function to set background images on initial load
+
 updateBackgroundImage();
 
-// Add event listener to the arrows
+
 prevArrow.addEventListener('click', () => {
   moveSlides("prev");
 });
@@ -29,29 +29,27 @@ nextArrow.addEventListener('click', () => {
   moveSlides("next");
 });
 
-// Function to move slides
+
 const moveSlides = (direction) => {
   if (direction === 'next') {
     index++;
     if (index === totalSlides) {
-      index = 0; // Loop back to the first image
+      index = 0; 
     }
   } else {
     if (index === 0) {
-      index = totalSlides - 1; // Move to the last image
-    } else {
-      index--;
+      index = totalSlides; 
     }
+    index--;
   }
 
-  // Update the 'main' class for the current slide
   for (let i = 0; i < totalSlides; i++) {
     carouselContainer[i].classList.remove('main');
   }
   carouselContainer[index].classList.add('main');
 };
 
-// Automatically move to the next slide every 2000ms (2 seconds)
-setInterval(() => {
+// moves every 4 seconds
+/*setInterval(() => {
   moveSlides('next');
-}, 2000);
+}, 4000);*/
